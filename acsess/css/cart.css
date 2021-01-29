@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;400;500;600;700&display=swap');
+*{
+  box-sizing: border-box;
+}
+html,body{
+  font-family: 'JetBrains Mono', monospace !important;
+  margin: 0;
+  padding: 0;
+}
+a{
+  color: #c5c3c0 !important;
+}
+a:hover{
+  color: white !important;
+  text-decoration: none !important;
+}
+body{
+  background: #18425e !important;
+  width: 100%;
+  height: 100vh;
+}
+/* SUB TOTAL  */
+.sub_total{
+  margin-top:20px;
+  color: white;
+  padding-bottom: 50px;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 500;
+}
+.sub_total--text{
+  width: 25%;
+  text-align:center;
+}
+.sub_total--subprice{
+  width: 25%;
+  text-align:center;
+
+}

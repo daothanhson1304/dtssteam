@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Store</title>
+  <link rel="stylesheet" href="./acsess/css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark  my-navbar" style="background-color: #171a21 !important;">
+    <div class="container-fluid">
+      <a href="index.html" class="navbar-brand">DTS-Store</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapse_target">
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link ">Store</a>
+            <div class="submenu_store">
+              <a href="#" class="submenu-item">HOME</a>
+              <a href="#" class="submenu-item">discover queue</a>
+              <a href="#" class="submenu-item">wishlist</a>
+              <a href="#" class="submenu-item">Points Shop</a>
+              <a href="#" class="submenu-item">News</a>
+              <a href="#" class="submenu-item">Starts</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Community</a>
+            <div class="submenu_community">
+              <a href="#" class="submenu-item">HOME</a>
+              <a href="#" class="submenu-item">discussions</a>
+              <a href="#" class="submenu-item">Workshop</a>
+              <a href="#" class="submenu-item">Market</a>
+              <a href="#" class="submenu-item">Broadcasts</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Support</a>
+          </li>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="cart">
+      <a href="cart.html" id="add-card-link" class="cart_link">Cart(0)</a>
+    </div>
+
+  </div>
+  <div class="sale_winter">
+    <img
+      src="https://cdn.cloudflare.steamstatic.com/steam/clusters/sale_autumn2019_assets/54b5034d397baccb93181cc6/home_header_text_english.png?t=1608659697"
+      alt="">
+  </div>
+
+  <div class="content">
+    <div class="container">
+      <!-- Group 1 -->
+      <div class="row game_host">
+        <div class="col-12 col-md-4 col-sm-6">
+          <div class="top-game game1">
+            <div>
+              <img class="img-fluid" src="./acsess/img/squad.jpg">
+              <div class="hero_data">
+                <div class="hero_content">
+                  <div class="hero_name">Squad</div>
+                  <div class="hero_stat">
+                    <span class="label">Developer:</span>
+                    <span class="data">Offworld Industries</span>
+                  </div>
+                  <div class="hero_stat">
+                    <span class="label">Publisher:</span>
+                    <span class="data">Offworld Industries</span>
+                  </div>
+                  <div class="hero_stat">
+                    <span class="label">ALl reviews</span>
+                    <span class="game_review">Very Positive</span>
+                  </div>
+
+                  <div class="add">
+                    <button class="add_to_card" id="adding">Add to card</button>
+                  </div>
+                </div>
+              </div>
+              <div class="discount">
+                <div class="name">squad</div>
+                <div class="discount_pct">-50%</div>
+                <div class="discount_prices">
+                  <div class="discount_original_price">990.000₫</div>
+                  <div class="discount_final_price"><span class="final_price">495000</span>₫</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-sm-6">
+          <div class="top-game">
+            <div>
+              <img class="img-fluid" src="./acsess/img/death stranding.jpg">
+              <div class="hero_data">
+                <div class="hero_content">
+                  <div class="hero_name">DEATH STRANDING</div>
+                  <div class="hero_stat">
+                    <span class="label">Developer:</span>
+                    <span class="data">KOJIMA PRODUCTIONS</span>
+                  </div>
+                  <div class="hero_stat">
+                    <span class="label">Publisher:</span>
+                    <span class="data">505 Games</span>
+                  </div>
+                  <div class="hero_stat">
+                    <span class="label">ALl reviews</span>
+                    <span class="game_review">Very Positive</span>
+                  </div>
+                  <div class="hero_stat"></div>
+                  <div class="add">
+                    <button class="add_to_card" id="adding">Add to card</button>
+                  </div>
+                </div>
+              </div>
+              <div class="discount">
+                <div class="name">death stranding</div>
+                <div class="discount_pct">-63%</div>
+                <div class="discount_prices">
+                  <div class="discount_original_price">1.850.000₫</div>
+                  <div class="discount_final_price"><span class="final_price">684500</span>₫</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-sm-6">
+          <div class="top-game">
+            <div>
+              <img class="img-fluid" src="./acsess/img/the sims.jpg">
+              <div class="hero_data">
+                <div class="hero_content">
+                  <div class="hero_name">The Sims™ 4</div>
+                  <div class="hero_stat">
+                    <span class="label">Developer:</span>
+                    <span class="data">Maxis</span>
+                  </div>
+                  <div class="hero_stat">
+                    <span class="label">Publisher:</span>
+                    <span class="data">Electronic Arts</span>
+                  </div>
+                  <div class="hero_stat">
+                    <span class="label">ALl reviews</span>
+                    <span class=" game_review">Very Positive</span>
+                  </div>
+                  <div class="hero_stat"></div>
+                  <div class="add">
+                    <button class="add_to_card" id="adding">Add to card</button>
+                  </div>
+                </div>
+              </div>
+              <div class="discount">
+                <div class="name">the sims</div>
+                <div class="discount_pct">-60%</div>
+                <div class="discount_prices">
+                  <div class="discount_original_price">690.000₫</div>
+                  <div class="discount_final_price"><span class="final_price">276000</span>₫</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="home_pagecontent">
+        <a href="#" class="award_link">
+          <div class="content_award1">
+            THE STEAM AWARDS
+          </div>
+          <div class="content_award2">
+            Vote for your favorite games of 2020 across ten categoris
+          </div>
+        </a>
+        <button class="btn_award"> Vote now</button>
+      </div>
+
+      <div class="sale_tag">
+        <img src="https://cdn.cloudflare.steamstatic.com/store/promo/winter2020/mountnbladebird.png?v=2" alt=""
+          class="floating_image">
+        <div class="home_title-ctn">
+          <div class="home_title">
+            New! - Browse Winter Specials by Genre or Theme
+          </div>
+          <div class="home_line">
+          </div>
+        </div>
+      </div>
+
+      <!-- Group 2 -->
+      <div class="row ">
+        <div class="col-6 col-md-3 col-sm-6">
+          <div class="top-game">
+            <div>
+              <img src="./acsess/img/counter strike.jpg" class="img-fluid">
+              <div class="discount">
+                <div class="name">counter strike</div>
+                <div class="discount_pct">-50%</div>
+                <div class="discount_prices">
+                  <div class="discount_original_price">310.000₫</div>
+                  <div class="discount_final_price"><span class="final_price">155000</span>₫</div>
+                </div>
+              </div>
+              <div class="add_cart">
+                <button class="btn_add-to-card" id="adding">Add to card</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-sm-6">
+          <div class="top-game">
+            <div>
+              <img src="./acsess/img/sea of thieves.jpg" class="img-fluid">
+              <div class="discount">
+                <div class="name">sea of thieves</div>
+                <div class="discount_pct">-50%</div>
+                <div class="discount_prices">
+                  <div class="discount_original_price">459.000₫</div>
+                  <div class="discount_final_price"><span class="final_price">229500</span>₫</div>
+                </div>
+              </div>
+              <div class="add_cart">
+                <button class="btn_add-to-card" id="adding">Add to card</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-sm-6">
+          <div class="top-game">
+            <div>
+              <img src="./acsess/img/red dead.jpg" class="img-fluid">
+              <div class="discount">
+                <div class="name">red dead</div>
+                <div class="discount_pct">-10%</div>
+                <div class="discount_prices">
+                  <div class="discount_original_price">160.000₫</div>
+                  <div class="discount_final_price"><span class="final_price">144000</span>₫</div>
+                </div>
+              </div>
+              <div class="add_cart">
+                <button class="btn_add-to-card" id="adding">Add to card</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-sm-6">
+          <div class="top-game">
+            <div>
+              <img src="./acsess/img/grand theft auto.jpg" class="img-fluid">
+              <div class="discount">
+                <div class="name">grand theft auto</div>
+                <div class="discount_pct">-20%</div>
+                <div class="discount_prices">
+                  <div class="discount_original_price">220.000₫</div>
+                  <div class="discount_final_price"><span class="final_price">176000</span>₫</div>
+                </div>
+              </div>
+              <div class="add_cart">
+                <button class="btn_add-to-card" id="adding">Add to card</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Group 3 -->
+      <div class="row ">
+        <div class="col-4 col-md-4 col-sm-12">
+          <div class="top-game">
+            <div>
+              <img src="./acsess/img/space engineers.jpg" alt="" class="img-fluid">
+              <div class="discount">
+                <div class="name">space engineers</div>
+                <div class="discount_pct">-75%</div>
+                <div class="discount_prices">
+                  <div class="discount_original_price">999.000₫</div>
+                  <div class="discount_final_price"><span class="final_price">249500</span>₫</div>
+                </div>
+              </div>
+              <div class="add_cart">
+                <button class="btn_add-to-card" id="adding">Add to card</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-12">
+          <div class="top-game">
+            <div>
+              <img src="./acsess/img/early access.jpg" alt="" class="img-fluid">
+              <div class="discount">
+                <div class="name">early access</div>
+                <div class="discount_pct">-67%</div>
+                <div class="discount_prices">
+                  <div class="discount_original_price">1.350.000₫</div>
+                  <div class="discount_final_price"><span class="final_price">445500</span>₫</div>
+                </div>
+              </div>
+              <div class="add_cart">
+                <button class="btn_add-to-card" id="adding">Add to card</button>
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-12">
+          <div class="top-game">
+            <div>
+              <img src="./acsess/img/slay the spire.jpg" alt="" class="img-fluid">
+              <div class="discount">
+                <div class="name">slay the spire</div>
+                <div class="discount_pct">-34%</div>
+                <div class="discount_prices">
+                  <div class="discount_original_price">550.000₫</div>
+                  <div class="discount_final_price"><span class="final_price">363000</span>₫</div>
+                </div>
+              </div>
+              <div class="add_cart">
+                <button class="btn_add-to-card" id="adding">Add to card</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Group 4 -->
+      <div class="row ">
+        <div class="col-6 col-md-3 col-sm-6">
+          <div class="top-game">
+            <div>
+              <img src="./acsess/img/monter hunter.jpg" class="img-fluid">
+              <div class="discount">
+                <div class="name">monter hunter</div>
+                <div class="discount_pct">-40%</div>
+                <div class="discount_prices">
+                  <div class="discount_original_price">310.000₫</div>
+                  <div class="discount_final_price"><span class="final_price">186000</span>₫</div>
+                </div>
+              </div>
+              <div class="add_cart">
+                <button class="btn_add-to-card" id="adding">Add to card</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-sm-6">
+          <div class="top-game">
+            <div>
+              <img src="./acsess/img/horizon.jpg" class="img-fluid">
+              <div class="discount">
+                <div class="name">horizon</div>
+                <div class="discount_pct">-33%</div>
+                <div class="discount_prices">
+                  <div class="discount_original_price">1.000.000₫</div>
+                  <div class="discount_final_price"><span class="final_price">670000</span>₫</div>
+                </div>
+              </div>
+              <div class="add_cart">
+                <button class="btn_add-to-card" id="adding">Add to card</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-sm-6">
+          <div class="top-game">
+            <div>
+              <img src="./acsess/img/raft.jpg" class="img-fluid">
+              <div class="discount">
+                <div class="name">raft</div>
+                <div class="discount_pct">-20%</div>
+                <div class="discount_prices">
+                  <div class="discount_original_price">220.000₫</div>
+                  <div class="discount_final_price"><span class="final_price">176000</span>₫</div>
+                </div>
+              </div>
+              <div class="add_cart">
+                <button class="btn_add-to-card" id="adding">Add to card</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-sm-6">
+          <div class="top-game">
+            <div>
+              <img src="./acsess/img/halo.jpg" class="img-fluid">
+              <div class="discount">
+                <div class="name">halo</div>
+                <div class="discount_pct">-50%</div>
+                <div class="discount_prices">
+                  <div class="discount_original_price">1.000.000₫</div>
+                  <div class="discount_final_price"><span class="final_price">500000</span>₫</div>
+                </div>
+              </div>
+              <div class="add_cart">
+                <button class="btn_add-to-card" id="adding">Add to card</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Group 5 -->
+      <div class="row ">
+        <div class="col-4 col-md-4 col-sm-12">
+          <div class="top-game">
+            <div>
+              <img src="./acsess/img/tell me why.jpg" alt="" class="img-fluid">
+              <div class="discount">
+                <div class="name">tell me why</div>
+                <div class="discount_pct">-67%</div>
+                <div class="discount_prices">
+                  <div class="discount_original_price">900.000₫</div>
+                  <div class="discount_final_price"><span class="final_price">297000</span>₫</div>
+                </div>
+              </div>
+              <div class="add_cart">
+                <button class="btn_add-to-card" id="adding">Add to card</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-12">
+          <div class="top-game">
+            <div>
+              <img src="./acsess/img/ride4.jpg" alt="" class="img-fluid">
+              <div class="discount">
+                <div class="name">ride4</div>
+                <div class="discount_pct">-63%</div>
+                <div class="discount_prices">
+                  <div class="discount_original_price">1.850.000₫</div>
+                  <div class="discount_final_price"><span class="final_price">684500</span>₫</div>
+                </div>
+              </div>
+              <div class="add_cart">
+                <button class="btn_add-to-card" id="adding">Add to card</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-12">
+          <div class="top-game">
+            <div>
+              <img src="./acsess/img/cloudpunk.jpg" alt="" class="img-fluid">
+              <div class="discount">
+                <div class="name">cloudpunk</div>
+                <div class="discount_pct">-50%</div>
+                <div class="discount_prices">
+                  <div class="discount_original_price">120.000₫</div>
+                  <div class="discount_final_price"><span class="final_price">60000</span>₫</div>
+                </div>
+              </div>
+              <div class="add_cart">
+                <button class="btn_add-to-card" id="adding">Add to card</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer_content">
+      <div class="rule"></div>
+      <div class="footer_maincontent">
+        <div class="footer_logo">
+          <a href="#">
+            <img class="img-fluid" src="https://store.cloudflare.steamstatic.com/public/images/footerLogo_valve_new.png"
+              alt="">
+          </a>
+        </div>
+        <div class="footer_text">
+          <div>
+            © 2020 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in
+            the
+            US
+            and other countries.
+          </div>
+          <div>
+            VAT included in all prices where applicable.
+          </div>
+        </div>
+        <div class="footer_logo_steam">
+          <img src="https://store.cloudflare.steamstatic.com/public/images/v6/logo_steam_footer.png" alt="">
+        </div>
+
+      </div>
+      <div class="rule"></div>
+      <div class="valve_links">
+        <a href="#" class="valve_link">About Valve</a>
+        &nbsp;|&nbsp;
+        <a href="#" class="valve_link">Steamworks</a>
+        &nbsp;|&nbsp;
+        <a href="#" class="valve_link">Jobs</a>
+        &nbsp;|&nbsp;
+        <a href="#" class="valve_link">Steam Distribution</a>
+        &nbsp;|&nbsp;
+        <a href="#" class="valve_link">Grift Cards</a>
+        &nbsp;|&nbsp;
+        <a href="#" class="valve_link">
+          <img src="https://store.cloudflare.steamstatic.com/public/images/ico/ico_facebook.gif" alt="">
+          Steam
+        </a>
+        &nbsp;|&nbsp;
+        <a href="#" class="valve_link">
+          <img src="https://store.cloudflare.steamstatic.com/public/images/ico/ico_twitter.gif" alt="">
+          Steam
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <script src="./acsess/js/main.js"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+  <!-- jQuery and JS bundle w/ Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

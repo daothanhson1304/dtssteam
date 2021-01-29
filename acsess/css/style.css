@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;400;500;600;700&display=swap');
+*{
+  box-sizing: border-box;
+}
+html,body{
+  font-family: 'JetBrains Mono', monospace !important;
+  margin: 0;
+  padding: 0;
+}
+a{
+  color: #c5c3c0 !important;
+}
+a:hover{
+  color: white !important;
+  text-decoration: none !important;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  background: url(https://cdn.cloudflare.steamstatic.com/store/promo/winter2020/winter_sale_2020_header_alpha2b.png?v=2) no-repeat center top, url(https://cdn.cloudflare.steamstatic.com/store/promo/winter2020/winter_sale_folliage_tile_b.png?v=2) repeat center top, #101928;
+}
+/* Navigation */
+.row{
+  display: flex;
+}
+.navbar{
+  background-color: #171a21 !important;
+  min-height: 100px;
+}
+.my-navbar{
+  background-color: #171a21;
+}
+.navbar-toggler{
+  outline: none !important;
+  border: none !important;
+}
+.nav-item{
+  margin: 0 10px;
+  position: relative;
+}
+.nav-item:hover .submenu_store{
+  display: block;
+}
+.nav-item:hover .submenu_community{
+  display: block;
+}
+@keyframes Grow{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.submenu_store,
+.submenu_community{
+  position: absolute;
+  display: none;
+  min-width: 132px;
+  background-color: #171a21;
+  padding: 5px 20px;
+  z-index: 10;
+  animation: Grow 0.2s ease-out;
+  box-shadow: 0 0 8px #000;
+}
+.submenu-item{
+  display: block;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 30px;
+  font-weight: 100;
+}
+.submenu-item:hover{
+  text-decoration: none;
+}
+.container-fluid{
+  padding: 0 100px!important;
+}
+.sale_winter{
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+.cart{
+  margin-top: 10px;
+  width: 100px;
+  float: right;
+  background-image: url(https://store.cloudflare.steamstatic.com/public/images/v6/storemenu/background_cart.jpg);
+  /* height: 20px; */
+  display: flex;
+  justify-content: center;
+  padding: 2px 10px;
+  align-items: center;
+}
+.cart_link{
+  /* padding: 0 25px; */
+  text-transform: uppercase !important;
+  font-size: 12px !important;
+}
+/* Content */
+.content{
+  margin: 80px 0;
+}
+.top-game img{
+  width: 100% ;
+}
+.top-game{
+  margin: 20px 0;
+  transform: scale(1.0);
+  transition-duration: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+.top-game:hover{
+  z-index: 10;
+  transform: scale(1.16);
+}
+
+/* .top-game:hover .game_host .discount{
+  bottom: 0%;
+} */
+
+.discount{
+  max-width: 100%;
+  display: flex;
+  font-size: 12px;
+  position: relative;
+  overflow: hidden;
+}
+.discount_pct{
+  padding: 0 10px;
+  color: #000;
+  background-color: #A1CD44;
+  /* width: 30% */
+  /* font-size: ; */
+}
+.discount_prices{
+  padding: 0 10px;
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+}
+.discount_final_price{
+  color: white;
+}
+.discount_original_price{
+  margin-right: 10px;
+  text-decoration: line-through;
+  color: #c5c3c0;
+}
+.add_cart{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.top-game:hover .btn_add-to-card{
+  left: 0;
+  opacity: 1;
+}
+.btn_add-to-card{
+  border: none !important;
+  outline: none !important;
+  display: block;
+  position: absolute;
+  top: 0%;
+  font-size: 12px;
+  color: white;
+  left: -40%;
+  opacity: 0;
+  background: linear-gradient( to bottom, #a4d007 5%, #536904 95%);
+  border-radius: 2px;
+  transition: left 0.3s,opacity 0.3s;
+}
+.btn_add-to-card:hover{
+  background: linear-gradient( to bottom, #b6d908 5%, #80a006 95%);
+}
+.btn_add-to-card span{
+  color: white;
+  font-size: 12px;
+}
+/* Hover app */
+.top-game:hover .hero_data{
+  top: 50%;
+}
+.game_host .discount{
+  max-width: 100%;
+  display: flex;
+  font-size: 12px;
+  position: absolute;
+  right: 0;
+  bottom: 5%;
+}
+.hero_data{
+  height: 50%;
+  padding: 10px;
+  width: 100%;
+  position: absolute;
+  background: linear-gradient( 315deg, #213c55 , #016968);
+  color: #fff;
+  font-size: 12px;
+  top: 100%;
+  left: 0;
+  right: 0;
+  transition: top 0.6s ease;
+}
+.hero_content{
+  padding: 2% 6%;
+}
+.hero_name{
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  margin: 3px 0;
+}
+.hero_data .label{
+  text-transform: uppercase;
+  color: #7b8b8b;
+  font-size: 12px;
+  margin: 3px;
+}
+.hero_data .data:hover{
+  cursor: pointer;
+  color: #66C0F4 ;
+}
+.game_review{
+  color: #66C0F4 ;
+  cursor: text;
+}
+.add_to_card:hover{
+  background: linear-gradient( to bottom, #b6d908 5%, #80a006 95%);
+}
+.add_to_card{
+  border: none !important;
+  outline: none !important;
+  position: absolute;
+  bottom: 8%;
+  padding: 5px 5px;
+  background: linear-gradient( to bottom, #a4d007 5%, #536904 95%);
+  color: white;
+  border-radius: 3px;
+}
+.sale_tag{
+  display: flex;
+  margin: 100px 0;
+  position: relative;
+}
+.home_pagecontent{
+  margin: 30px 0;
+  cursor: pointer;
+  width: 100%;
+  height: 150px;
+  background-image: url(https://cdn.cloudflare.steamstatic.com/store/promo/winter2020/sale_page_banner_image.png?v=2);
+  display: flex;
+  align-items: center;
+  box-shadow: 2.86px 6.67px 14.29px rgba( 0, 0, 0, 0.67 );
+  transition-duration: 0.3s;
+  /* transform: scale(1.0); */
+}
+.home_pagecontent:hover{
+  /* transition-timing-function: cubic-bezier(0, 0.73, 0.48, 1); */
+  transform: scale(1.05);
+  transition-duration: 0.3s ;
+}
+.award_link{
+  padding: 0 40px;
+}
+.home_pagecontent:hover .btn_award{
+  background-color:#fae5a2;
+  box-shadow: 0 0 20px #fae5a2;
+}
+.content_award1{
+  color: #000000;
+  font-size: 36px;
+  font-weight: 900;
+}
+.content_award2{
+  color: #000;
+}
+.btn_award{
+  margin-left: 20px;
+  border: none;
+  outline: none !important;
+  color: #000;
+  font-size: 30px;
+  height: 50px;
+  width: 300px;
+  background-color: #ffc508;
+
+}
+
+.home_title-ctn{
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+}
+.home_line{
+  display: inline-block;
+  height: 1px;
+  flex: 1;
+  background-color:rgba(255, 255, 255, 0.4);
+  top: 20px;
+  margin-left: 10px;
+}
+.home_title{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 20px;
+  display: inline-block;
+  /* position: absolute; */
+  bottom: 0;
+}
+
+/* Footer */
+.footer{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 120px;
+  padding-top: 20px;
+  position: relative;
+  bottom: 0;
+}
+.footer_content{
+  margin: 0 auto;
+  width: 940px;
+  /* background-color: rebeccapurple; */
+}
+.footer_maincontent{
+  display: flex;
+  margin-bottom: 5px;
+}
+.footer_text{
+  font-size: 12px;
+  line-height: 16px;
+  margin:0 12px;
+  color: #363c44;
+
+}
+.valve-links{
+  display: flex;
+  justify-content: space-around;
+}
+.footer_logo{
+  float: left;
+  height: 25px;
+  width: 100px;
+}
+.footer_logo_steam{
+  float: right;
+}
+.rule{
+  width: 100%;
+  height: 10px;
+  border-top: 1px solid #363c44;
+}
+
+.valve_link{
+  color: #C6D4DF;
+  display: inline-block;
+  font-size: 14px;
+}
+
+/* Game name */
+.name{
+  display: none;
+}
+
+
+/* /* Cart page  */
+.page_content{
+  margin-top: 50px;
+  padding: 0 0 20px 0;
+}
+.pageheader{
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.product_container{
+  margin-top: 20px;
+}
+.product_header{
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  border-bottom:2px solid gray ;
+  text-align: center;
+}
+.product_title{
+  flex: 1;
+}
+.product_price{
+  flex: 1;
+}
+.product_quantity{
+  flex: 1;
+}
+.product_total{
+  flex: 1;
+}
+
+.product_all{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.product_content{
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  margin: 20px 0;
+  text-align: center;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+}
+.products_img{
+  height: 165px;
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  /* width: 100%; */
+}
+.products_price{
+  flex: 1;
+}
+.products_quantity{
+  flex: 1;
+}
+.delete_item{
+  display: none;
+}
+.products_total{
+  flex: 1;
+}
+.delete i{
+  font-size: 20px;
+  padding: 0 10px 0 0;
+  cursor: pointer;
+}
+.products_quantity span{
+  margin: 0 20px;
+}
+.quantity{
+  cursor: pointer;
+  display: none;
+  padding: 8px;
+}
